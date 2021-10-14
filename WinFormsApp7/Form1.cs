@@ -7,18 +7,62 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CalculatorLibrary2;
 
 namespace WinFormsApp7
 {
     public partial class Form1 : Form
     {
+        public Double Diam1;  //{ Get, Set};
+        public double Diamleng1;//="";
+        double Numb = double.NaN;
         public Form1()
         {
             InitializeComponent();
-            Form1_Load();
-            
+            //Form1_Load();
+            //string Diam; //= DiameterTextBox.Text;
+            //Diam = DiameterTextBox.Text;
         }
-        private void Form1_Load() //(object sender, EventArgs e)
+
+        private void ChangeDiameter(object sender, EventArgs e)
+        {
+            if (Diamvalue(DiameterTextBox.Text))
+            {
+                Diam1 = Numb;// Convert.ToDouble(DiameterTextBox.Text);
+                DiameterTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            }
+            else
+            {
+                Diam1 = 0;
+                DiameterTextBox.BackColor = Color.Red;
+            }
+            label7.Text = Convert.ToString(Calculator.DiameterCalculate(Diam1, Diamleng1));
+        }
+        private void ChangeDiameterLength(object sender, EventArgs e)
+        {
+            if (Diamvalue(DiameterLengthTextBox.Text))
+            {
+                Diamleng1 = Numb;// Convert.ToDouble(DiameterTextBox.Text);
+                DiameterLengthTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            }
+            else
+            {
+                Diamleng1 = 0;
+                DiameterLengthTextBox.BackColor = Color.Red;
+            }
+            label7.Text = Convert.ToString(Calculator.DiameterCalculate(Diam1, Diamleng1));
+        }
+        /// <summary>
+        ///  Convert the text to double, first need public declaring Numb!
+        ///  and return value is boolean
+        /// </summary>
+        private bool Diamvalue(string ItemValue)
+        { 
+            bool TryConvert = double.TryParse(ItemValue, out Numb);
+            return TryConvert;
+        }
+        /*
+            private void Form1_Load() //(object sender, EventArgs e)
         {
             // Creating and setting the properties of label
             Label Ll = new Label();
@@ -79,8 +123,9 @@ namespace WinFormsApp7
         }
 
         //A labelformok:
-        private void LabelForm()
+        public void LabelForm()
         {
+            //*
             Label Label1 = new Label();
             // Set  properties  
             Label1.Height = 30;
@@ -200,7 +245,7 @@ namespace WinFormsApp7
             ResultLabelFe.Width = 75;
             ResultLabelFe.BackColor = Color.LightGreen;
             ResultLabelFe.ForeColor = Color.Black;
-            ResultLabelFe.Location = new Point(375, 120);
+            ResultLabelFe.Location = new Point(375, 60);
             ResultLabelFe.AutoSize = false;
             ResultLabelFe.TextAlign = ContentAlignment.MiddleCenter;
             ResultLabelFe.Text = "Fe";
@@ -257,12 +302,12 @@ namespace WinFormsApp7
             ResultLabelPlastic.Font = new Font("Arial", 12);
 
             this.Controls.Add(ResultLabelPlastic);
-
+            //
         }
-       
+
 
         //a szövegdobozok:
-        private void TextBoxForm()
+        public void TextBoxForm()
         {
             //az átmérő:
             TextBox DiameterTextBox = new TextBox();
@@ -273,13 +318,13 @@ namespace WinFormsApp7
             DiameterTextBox.Location = new Point(10, 60);
             DiameterTextBox.AutoSize = false;
             //DiameterTextBox.TextAlign = (HorizontalAlignment)ContentAlignment.MiddleCenter;
-            DiameterTextBox.Name = "DaimeterBox";
+            DiameterTextBox.Name = "DaimeterTextBox";
             DiameterTextBox.Font = new Font("Arial", 16);
 
             this.Controls.Add(DiameterTextBox);
-
+            
             DiameterTextBox.TextChanged += new EventHandler(ChangeDiameter);
-
+            
             //az átmérő hossza:
             TextBox DiameterLengthTextBox = new TextBox();
             DiameterLengthTextBox.Height = 30;
@@ -289,28 +334,20 @@ namespace WinFormsApp7
             DiameterLengthTextBox.Location = new Point(150, 60);
             DiameterLengthTextBox.AutoSize = false;
             //DiameterLengthTextBox.TextAlign = (HorizontalAlignment)ContentAlignment.MiddleCenter;
-            DiameterLengthTextBox.Name = "DiameterLengthBox";
+            DiameterLengthTextBox.Name = "DiameterLengthTexthBox";
             DiameterLengthTextBox.Font = new Font("Arail", 16);
 
             this.Controls.Add(DiameterLengthTextBox);
-
-
-
-        }
-        private void ChangeDiameter(object sender, EventArgs e)
-        {
             try
             {
-                // Convert the text to a Double and determine if it is a negative number.
-                if (double.Parse(diametertextbox.Text) < 0)
+
+                if (Double.Parse(DiameterLengthTextBox.Text) < 0)
                 {
-                    // If the number is negative, display it in Red.
-                    DiameterTextBox.ForeColor = Color.Red;
+                    DiameterLengthTextBox.ForeColor = Color.Red;
                 }
                 else
                 {
-                    // If the number is not negative, display it in Black.
-                    DiameterTextBox.ForeColor = Color.Blue;
+                    DiameterLengthTextBox.ForeColor = Color.Black;
                 }
             }
             catch
@@ -318,9 +355,19 @@ namespace WinFormsApp7
                 // If there is an error, display the text using the system colors.
                 DiameterTextBox.ForeColor = SystemColors.ControlText;
             }
+            DiameterLengthTextBox.TextChanged += new EventHandler(ChangeDiameterLength);
         }
 
-
+        private void DiameterTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            //
+            // Detect the KeyEventArg's key enumerated constant.
+            //
+            if (e.KeyCode == Keys.Enter)
+            {
+                MessageBox.Show("You pressed enter! Good job!");
+            }
+        }*/
 
 
     }
