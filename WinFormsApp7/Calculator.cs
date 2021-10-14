@@ -21,7 +21,17 @@ namespace CalculatorLibrary2
             Result = Diam * Diam * 3.14 / 4 * DiamLeng;
             return Result;
         }
+        public static double HexaCalculate()
+        {
+            //hossz*(3/2*GYÖK(3)*(laptáv*laptáv/3))
+        }
 
+        public static double PipeCalculate()
+        {
+            //=((NagyD*NagyD*3.14/4)-((NagyD-2*kisd)*(NagyD-2*kisd)*3.14/4))*NagyD
+        }
+        
+        
         public double DoOperation(double num1, double num2, string op)
         {
             double result = double.NaN; // Default value is "not-a-number" if an operation, such as division, could result in an error.

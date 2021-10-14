@@ -53,10 +53,10 @@ namespace WinFormsApp7
         private void PrintWeight()
         {
             double Volume = Calculator.DiameterCalculate(Diam1, Diamleng1);
-            label7.Text = Convert.ToString(Volume * 7.8 / 1000000);
-            label8.Text = Convert.ToString(Volume * 2.7 / 1000000);
-            label9.Text = Convert.ToString(Volume * 8.9 / 1000000);
-            label10.Text = Convert.ToString(Volume * 1.2 / 1000000);
+            label7.Text = Convert.ToString(Math.Round((Volume * 7.8 / 1000000), 2));
+            label8.Text = Convert.ToString(Math.Round((Volume * 2.7 / 1000000),2));
+            label9.Text = Convert.ToString(Math.Round((Volume * 8.9 / 1000000),2));
+            label10.Text = Convert.ToString(Math.Round((Volume * 1.2 / 1000000),2));
         }
         private void PressExitButton(object sender, EventArgs e)
         {
@@ -73,8 +73,6 @@ namespace WinFormsApp7
             bool TryConvert = double.TryParse(ItemValue, out Numb);
             return TryConvert;
         }
-
-
 
     }
 }
