@@ -32,8 +32,8 @@ namespace WinFormsApp7
         {
             this.DiameterTextBox = new System.Windows.Forms.TextBox();
             this.DiameterLengthTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.LabelDiam2 = new System.Windows.Forms.Label();
+            this.labelDiam3 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -55,15 +55,15 @@ namespace WinFormsApp7
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.HexaLengthTextBox = new System.Windows.Forms.TextBox();
+            this.HexaTextBox = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
+            this.labelHexa2 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -74,9 +74,9 @@ namespace WinFormsApp7
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
+            this.labelDiam1 = new System.Windows.Forms.Label();
+            this.labelHexa1 = new System.Windows.Forms.Label();
+            this.labelHexa3 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
@@ -89,6 +89,17 @@ namespace WinFormsApp7
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // labelDiam1
+            // 
+            this.labelDiam1.BackColor = System.Drawing.Color.Aqua;
+            this.labelDiam1.Font = new System.Drawing.Font("Footlight MT Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelDiam1.Location = new System.Drawing.Point(10, -1);
+            this.labelDiam1.Name = "labelDiam1";
+            this.labelDiam1.Size = new System.Drawing.Size(126, 24);
+            this.labelDiam1.TabIndex = 46;
+            this.labelDiam1.Text = "Átmérő";
+            this.labelDiam1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DiameterTextBox
             // 
@@ -110,27 +121,87 @@ namespace WinFormsApp7
             this.DiameterLengthTextBox.TabIndex = 2;
             this.DiameterLengthTextBox.TextChanged += new System.EventHandler(this.ChangeDiameterLength);
             // 
-            // label1
+            // LabelDiam2
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label1.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(10, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Átmérő";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.LabelDiam2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.LabelDiam2.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LabelDiam2.Location = new System.Drawing.Point(10, 21);
+            this.LabelDiam2.Name = "LabelDiam2";
+            this.LabelDiam2.Size = new System.Drawing.Size(60, 12);
+            this.LabelDiam2.TabIndex = 0;
+            this.LabelDiam2.Text = "Átmérő";
+            this.LabelDiam2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label2
+            // labelDiam3
             // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label2.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(76, 23);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 12);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Hossz";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelDiam3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelDiam3.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelDiam3.Location = new System.Drawing.Point(76, 23);
+            this.labelDiam3.Name = "labelDiam3";
+            this.labelDiam3.Size = new System.Drawing.Size(60, 12);
+            this.labelDiam3.TabIndex = 0;
+            this.labelDiam3.Text = "Hossz";
+            this.labelDiam3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+
+            
+            // 
+            // labelHexa1
+            // 
+            this.labelHexa1.BackColor = System.Drawing.Color.Aqua;
+            this.labelHexa1.Font = new System.Drawing.Font("Footlight MT Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelHexa1.Location = new System.Drawing.Point(10, 62);
+            this.labelHexa1.Name = "labelHexa1";
+            this.labelHexa1.Size = new System.Drawing.Size(126, 24);
+            this.labelHexa1.TabIndex = 0;
+            this.labelHexa1.Text = "Hatszög";
+            this.labelHexa1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // HexaTextBox
+            // 
+            this.HexaTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.HexaTextBox.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HexaTextBox.Location = new System.Drawing.Point(10, 101);
+            this.HexaTextBox.Name = "HexaTextBox";
+            this.HexaTextBox.Size = new System.Drawing.Size(60, 24);
+            this.HexaTextBox.TabIndex = 22;
+            this.HexaTextBox.TextChanged += new System.EventHandler(this.ChangeHexa);
+            // 
+            // HexaLengthTextBox
+            // 
+            this.HexaLengthTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.HexaLengthTextBox.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HexaLengthTextBox.Location = new System.Drawing.Point(76, 101);
+            this.HexaLengthTextBox.Name = "HexaLengthTextBox";
+            this.HexaLengthTextBox.Size = new System.Drawing.Size(60, 24);
+            this.HexaLengthTextBox.TabIndex = 23;
+            this.HexaLengthTextBox.TextChanged += new System.EventHandler(this.ChangeHexaLength);
+            // 
+            // labelHexa2
+            // 
+            this.labelHexa2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelHexa2.Location = new System.Drawing.Point(12, 87);
+            this.labelHexa2.Name = "labelHexa2";
+            this.labelHexa2.Size = new System.Drawing.Size(60, 12);
+            this.labelHexa2.TabIndex = 0;
+            this.labelHexa2.Text = "Laptáv";
+            this.labelHexa2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // labelHexa3
+            // 
+            this.labelHexa3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelHexa3.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelHexa3.Location = new System.Drawing.Point(76, 86);
+            this.labelHexa3.Name = "labelHexa3";
+            this.labelHexa3.Size = new System.Drawing.Size(60, 13);
+            this.labelHexa3.TabIndex = 48;
+            this.labelHexa3.Text = "Hossz";
+            this.labelHexa3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+
+            
+            
+
+
+
             // 
             // label3
             // 
@@ -325,24 +396,7 @@ namespace WinFormsApp7
             this.label22.Size = new System.Drawing.Size(33, 20);
             this.label22.TabIndex = 19;
             this.label22.Text = "label7";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox1.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(76, 101);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(60, 24);
-            this.textBox1.TabIndex = 23;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox2.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(10, 101);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(60, 24);
-            this.textBox2.TabIndex = 22;
+
             // 
             // textBox3
             // 
@@ -399,16 +453,7 @@ namespace WinFormsApp7
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(60, 24);
             this.textBox8.TabIndex = 28;
-            // 
-            // label24
-            // 
-            this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label24.Location = new System.Drawing.Point(12, 87);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(60, 12);
-            this.label24.TabIndex = 31;
-            this.label24.Text = "Laptáv";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+
             // 
             // label25
             // 
@@ -509,39 +554,7 @@ namespace WinFormsApp7
             this.label33.TabIndex = 44;
             this.label33.Text = "fal";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label35
-            // 
-            this.label35.BackColor = System.Drawing.Color.Aqua;
-            this.label35.Font = new System.Drawing.Font("Footlight MT Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label35.Location = new System.Drawing.Point(10, -1);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(126, 24);
-            this.label35.TabIndex = 46;
-            this.label35.Text = "Átmérő";
-            this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label36
-            // 
-            this.label36.BackColor = System.Drawing.Color.Aqua;
-            this.label36.Font = new System.Drawing.Font("Footlight MT Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label36.Location = new System.Drawing.Point(10, 62);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(126, 24);
-            this.label36.TabIndex = 47;
-            this.label36.Text = "Hatszög";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label23
-            // 
-            this.label23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label23.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(76, 86);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(60, 13);
-            this.label23.TabIndex = 48;
-            this.label23.Text = "Hossz";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+
             // 
             // label37
             // 
@@ -672,9 +685,9 @@ namespace WinFormsApp7
             this.Controls.Add(this.label31);
             this.Controls.Add(this.label38);
             this.Controls.Add(this.label37);
-            this.Controls.Add(this.label23);
-            this.Controls.Add(this.label36);
-            this.Controls.Add(this.label35);
+            this.Controls.Add(this.labelHexa3);
+            this.Controls.Add(this.labelHexa1);
+            this.Controls.Add(this.labelDiam1);
             this.Controls.Add(this.label33);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.textBox11);
@@ -685,15 +698,15 @@ namespace WinFormsApp7
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.label24);
+            this.Controls.Add(this.labelHexa2);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.HexaLengthTextBox);
+            this.Controls.Add(this.HexaTextBox);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label21);
@@ -715,8 +728,8 @@ namespace WinFormsApp7
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelDiam3);
+            this.Controls.Add(this.LabelDiam2);
             this.Controls.Add(this.DiameterLengthTextBox);
             this.Controls.Add(this.DiameterTextBox);
             this.Font = new System.Drawing.Font("Footlight MT Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -731,8 +744,8 @@ namespace WinFormsApp7
         #endregion
         private System.Windows.Forms.TextBox DiameterTextBox;
         private System.Windows.Forms.TextBox DiameterLengthTextBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LabelDiam2;
+        private System.Windows.Forms.Label labelDiam3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -754,15 +767,15 @@ namespace WinFormsApp7
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox HexaLengthTextBox;
+        private System.Windows.Forms.TextBox HexaTextBox;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label labelHexa2;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
@@ -773,9 +786,9 @@ namespace WinFormsApp7
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label labelDiam1;
+        private System.Windows.Forms.Label labelHexa1;
+        private System.Windows.Forms.Label labelHexa3;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label31;
