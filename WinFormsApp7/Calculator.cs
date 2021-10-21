@@ -38,6 +38,19 @@ namespace CalculatorLibrary2
             return Result;
         }
         /// <summary>
+        /// Calculate Flat or Square profil volume
+        /// </summary>
+        /// <param name="BrickWidth"></param>
+        /// <param name="BrickHeight"></param>
+        /// <param name="BrickLength"></param>
+        /// <returns></returns>
+        public static double BrickCalculate(double BrickWidth, double BrickHeight, double BrickLength)
+        {
+            double Result = double.NaN;
+            Result = BrickWidth * BrickHeight * BrickLength;
+            return Result;
+        }
+        /// <summary>
         /// Calculating Pipe volume
         /// </summary>
         /// <param name="OutDiam"></param>
@@ -47,9 +60,9 @@ namespace CalculatorLibrary2
         public static double PipeCalculate(double OutDiam, double Wall, double PipeLength)
         {
             //=((NagyD*NagyD*3.14/4)-((NagyD-2*kisd)*(NagyD-2*kisd)*3.14/4))*NagyD
-            double InDiam = OutDiam - 2 * Wall;
+          double InDiam = OutDiam - 2 * Wall;
             double Result = double.NaN;
-            Result=((OutDiam*OutDiam*3.14/4)-((OutDiam-2*InDiam)*(OutDiam-2*InDiam)*3.14/4))*OutDiam;
+            Result=(((OutDiam*OutDiam*3.14/4)-((OutDiam-2*InDiam)*(OutDiam-2*InDiam)*3.14/4))*OutDiam)*PipeLength;
             return Result;
         }
 

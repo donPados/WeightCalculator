@@ -30,76 +30,62 @@ namespace WinFormsApp7
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.ExitButton = new System.Windows.Forms.Button();
             this.DiameterTextBox = new System.Windows.Forms.TextBox();
             this.DiameterLengthTextBox = new System.Windows.Forms.TextBox();
+            this.HexaTextBox = new System.Windows.Forms.TextBox();
+            this.HexaLengthTextBox = new System.Windows.Forms.TextBox();
+            this.BrickWidthTextBox = new System.Windows.Forms.TextBox();
+            this.BrickHeightTextBox = new System.Windows.Forms.TextBox();
+            this.BrickLengthTextBox = new System.Windows.Forms.TextBox();
+            this.PipeDiamtextBox = new System.Windows.Forms.TextBox();
+            this.PipeWalltextBox = new System.Windows.Forms.TextBox();
+            this.PipeLengthtextBox = new System.Windows.Forms.TextBox();
+            this.HolSecWidthtextBox = new System.Windows.Forms.TextBox();
+            this.HolSecHeigthtextBox = new System.Windows.Forms.TextBox();
+            this.HolSecWalltextBox = new System.Windows.Forms.TextBox();
+            this.HolSecLengthtextBox = new System.Windows.Forms.TextBox();
+            this.labelDiam1 = new System.Windows.Forms.Label();
             this.LabelDiam2 = new System.Windows.Forms.Label();
             this.labelDiam3 = new System.Windows.Forms.Label();
+            this.labelHexa1 = new System.Windows.Forms.Label();
+            this.labelHexa2 = new System.Windows.Forms.Label();
+            this.labelHexa3 = new System.Windows.Forms.Label();
+            this.labelBrick1 = new System.Windows.Forms.Label();
+            this.labelBrick2 = new System.Windows.Forms.Label();
+            this.labelBrick3 = new System.Windows.Forms.Label();
+            this.labelBrick4 = new System.Windows.Forms.Label();
+            this.labelPipe1 = new System.Windows.Forms.Label();
+            this.labelPipe2 = new System.Windows.Forms.Label();
+            this.labelPipe3 = new System.Windows.Forms.Label();
+            this.labelPipe4 = new System.Windows.Forms.Label();
+            this.labelHolSec1 = new System.Windows.Forms.Label();
+            this.labelHolSec2 = new System.Windows.Forms.Label();
+            this.labelHolSec3 = new System.Windows.Forms.Label();
+            this.labelHolSec4 = new System.Windows.Forms.Label();
+            this.labelHolSec5 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.HexaLengthTextBox = new System.Windows.Forms.TextBox();
-            this.HexaTextBox = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.labelHexa2 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.labelDiam1 = new System.Windows.Forms.Label();
-            this.labelHexa1 = new System.Windows.Forms.Label();
-            this.labelHexa3 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
+            this.labelFeResult = new System.Windows.Forms.Label();
+            this.labelAlResult = new System.Windows.Forms.Label();
+            this.labelCuResult = new System.Windows.Forms.Label();
+            this.labelPLResult = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelDiam1
+            // ExitButton
             // 
-            this.labelDiam1.BackColor = System.Drawing.Color.Aqua;
-            this.labelDiam1.Font = new System.Drawing.Font("Footlight MT Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelDiam1.Location = new System.Drawing.Point(10, -1);
-            this.labelDiam1.Name = "labelDiam1";
-            this.labelDiam1.Size = new System.Drawing.Size(126, 24);
-            this.labelDiam1.TabIndex = 46;
-            this.labelDiam1.Text = "Átmérő";
-            this.labelDiam1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ExitButton.Location = new System.Drawing.Point(192, 0);
+            this.ExitButton.Name = "ExitButton";
+            this.ExitButton.Size = new System.Drawing.Size(75, 23);
+            this.ExitButton.TabIndex = 21;
+            this.ExitButton.Text = "Kilépés";
+            this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.PressExitButton);
             // 
             // DiameterTextBox
             // 
@@ -110,6 +96,7 @@ namespace WinFormsApp7
             this.DiameterTextBox.Size = new System.Drawing.Size(60, 24);
             this.DiameterTextBox.TabIndex = 1;
             this.DiameterTextBox.TextChanged += new System.EventHandler(this.ChangeDiameter);
+            this.DiameterTextBox.GotFocus += new System.EventHandler(this.GotFocusDiamaterTextBox);
             // 
             // DiameterLengthTextBox
             // 
@@ -120,6 +107,136 @@ namespace WinFormsApp7
             this.DiameterLengthTextBox.Size = new System.Drawing.Size(60, 24);
             this.DiameterLengthTextBox.TabIndex = 2;
             this.DiameterLengthTextBox.TextChanged += new System.EventHandler(this.ChangeDiameterLength);
+            this.DiameterTextBox.GotFocus += new System.EventHandler(this.GotFocusDiameterLengthTextBox);
+            // 
+            // HexaTextBox
+            // 
+            this.HexaTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.HexaTextBox.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HexaTextBox.Location = new System.Drawing.Point(10, 101);
+            this.HexaTextBox.Name = "HexaTextBox";
+            this.HexaTextBox.Size = new System.Drawing.Size(60, 24);
+            this.HexaTextBox.TabIndex = 3;
+            this.HexaTextBox.TextChanged += new System.EventHandler(this.ChangeHexa);
+            // 
+            // HexaLengthTextBox
+            // 
+            this.HexaLengthTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.HexaLengthTextBox.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HexaLengthTextBox.Location = new System.Drawing.Point(76, 101);
+            this.HexaLengthTextBox.Name = "HexaLengthTextBox";
+            this.HexaLengthTextBox.Size = new System.Drawing.Size(60, 24);
+            this.HexaLengthTextBox.TabIndex = 4;
+            this.HexaLengthTextBox.TextChanged += new System.EventHandler(this.ChangeHexaLength);
+            // 
+            // BrickWidthTextBox
+            // 
+            this.BrickWidthTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BrickWidthTextBox.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BrickWidthTextBox.Location = new System.Drawing.Point(10, 166);
+            this.BrickWidthTextBox.Name = "BrickWidthTextBox";
+            this.BrickWidthTextBox.Size = new System.Drawing.Size(60, 24);
+            this.BrickWidthTextBox.TabIndex = 5;
+            this.BrickWidthTextBox.TextChanged += new System.EventHandler(this.ChangeBrickWidth);
+            // 
+            // BrickHeightTextBox
+            // 
+            this.BrickHeightTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BrickHeightTextBox.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BrickHeightTextBox.Location = new System.Drawing.Point(76, 165);
+            this.BrickHeightTextBox.Name = "BrickHeightTextBox";
+            this.BrickHeightTextBox.Size = new System.Drawing.Size(60, 24);
+            this.BrickHeightTextBox.TabIndex = 6;
+            this.BrickHeightTextBox.TextChanged += new System.EventHandler(this.ChangeBrickHeight);
+            // 
+            // BrickLengthTextBox
+            // 
+            this.BrickLengthTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BrickLengthTextBox.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BrickLengthTextBox.Location = new System.Drawing.Point(142, 165);
+            this.BrickLengthTextBox.Name = "BrickLengthTextBox";
+            this.BrickLengthTextBox.Size = new System.Drawing.Size(60, 24);
+            this.BrickLengthTextBox.TabIndex = 7;
+            this.BrickLengthTextBox.TextChanged += new System.EventHandler(this.ChangeBrickLength);
+            // 
+            // PipeDiamtextBox
+            // 
+            this.PipeDiamtextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.PipeDiamtextBox.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PipeDiamtextBox.Location = new System.Drawing.Point(8, 239);
+            this.PipeDiamtextBox.Name = "PipeDiamtextBox";
+            this.PipeDiamtextBox.Size = new System.Drawing.Size(60, 24);
+            this.PipeDiamtextBox.TabIndex = 8;
+            this.PipeDiamtextBox.TextChanged += new System.EventHandler(this.ChangePipeDiam);
+            // 
+            // PipeWalltextBox
+            // 
+            this.PipeWalltextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.PipeWalltextBox.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PipeWalltextBox.Location = new System.Drawing.Point(74, 239);
+            this.PipeWalltextBox.Name = "PipeWalltextBox";
+            this.PipeWalltextBox.Size = new System.Drawing.Size(60, 24);
+            this.PipeWalltextBox.TabIndex = 9;
+            this.PipeWalltextBox.TextChanged += new System.EventHandler(this.ChangePipeWall);
+            // 
+            // PipeLengthtextBox
+            // 
+            this.PipeLengthtextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.PipeLengthtextBox.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PipeLengthtextBox.Location = new System.Drawing.Point(141, 239);
+            this.PipeLengthtextBox.Name = "PipeLengthtextBox";
+            this.PipeLengthtextBox.Size = new System.Drawing.Size(60, 24);
+            this.PipeLengthtextBox.TabIndex = 10;
+            this.PipeLengthtextBox.TextChanged += new System.EventHandler(this.ChangePipeLength);
+            // 
+            // HolSecWidthtextBox
+            // 
+            this.HolSecWidthtextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.HolSecWidthtextBox.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HolSecWidthtextBox.Location = new System.Drawing.Point(9, 305);
+            this.HolSecWidthtextBox.MaximumSize = new System.Drawing.Size(60, 25);
+            this.HolSecWidthtextBox.Name = "HolSecWidthtextBox";
+            this.HolSecWidthtextBox.Size = new System.Drawing.Size(60, 24);
+            this.HolSecWidthtextBox.TabIndex = 11;
+            // 
+            // HolSecHeigthtextBox
+            // 
+            this.HolSecHeigthtextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.HolSecHeigthtextBox.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HolSecHeigthtextBox.Location = new System.Drawing.Point(75, 305);
+            this.HolSecHeigthtextBox.MaximumSize = new System.Drawing.Size(60, 25);
+            this.HolSecHeigthtextBox.Name = "HolSecHeigthtextBox";
+            this.HolSecHeigthtextBox.Size = new System.Drawing.Size(60, 24);
+            this.HolSecHeigthtextBox.TabIndex = 12;
+            // 
+            // HolSecWalltextBox
+            // 
+            this.HolSecWalltextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.HolSecWalltextBox.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HolSecWalltextBox.Location = new System.Drawing.Point(141, 305);
+            this.HolSecWalltextBox.Name = "HolSecWalltextBox";
+            this.HolSecWalltextBox.Size = new System.Drawing.Size(60, 24);
+            this.HolSecWalltextBox.TabIndex = 13;
+            // 
+            // HolSecLengthtextBox
+            // 
+            this.HolSecLengthtextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.HolSecLengthtextBox.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HolSecLengthtextBox.Location = new System.Drawing.Point(207, 305);
+            this.HolSecLengthtextBox.Name = "HolSecLengthtextBox";
+            this.HolSecLengthtextBox.Size = new System.Drawing.Size(60, 24);
+            this.HolSecLengthtextBox.TabIndex = 14;
+            // 
+            // labelDiam1
+            // 
+            this.labelDiam1.BackColor = System.Drawing.Color.Aqua;
+            this.labelDiam1.Font = new System.Drawing.Font("Footlight MT Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelDiam1.Location = new System.Drawing.Point(10, -1);
+            this.labelDiam1.Name = "labelDiam1";
+            this.labelDiam1.Size = new System.Drawing.Size(126, 24);
+            this.labelDiam1.TabIndex = 0;
+            this.labelDiam1.Text = "Átmérő";
+            this.labelDiam1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LabelDiam2
             // 
@@ -142,8 +259,6 @@ namespace WinFormsApp7
             this.labelDiam3.TabIndex = 0;
             this.labelDiam3.Text = "Hossz";
             this.labelDiam3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-
-            
             // 
             // labelHexa1
             // 
@@ -155,26 +270,6 @@ namespace WinFormsApp7
             this.labelHexa1.TabIndex = 0;
             this.labelHexa1.Text = "Hatszög";
             this.labelHexa1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // HexaTextBox
-            // 
-            this.HexaTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.HexaTextBox.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.HexaTextBox.Location = new System.Drawing.Point(10, 101);
-            this.HexaTextBox.Name = "HexaTextBox";
-            this.HexaTextBox.Size = new System.Drawing.Size(60, 24);
-            this.HexaTextBox.TabIndex = 22;
-            this.HexaTextBox.TextChanged += new System.EventHandler(this.ChangeHexa);
-            // 
-            // HexaLengthTextBox
-            // 
-            this.HexaLengthTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.HexaLengthTextBox.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.HexaLengthTextBox.Location = new System.Drawing.Point(76, 101);
-            this.HexaLengthTextBox.Name = "HexaLengthTextBox";
-            this.HexaLengthTextBox.Size = new System.Drawing.Size(60, 24);
-            this.HexaLengthTextBox.TabIndex = 23;
-            this.HexaLengthTextBox.TextChanged += new System.EventHandler(this.ChangeHexaLength);
             // 
             // labelHexa2
             // 
@@ -193,541 +288,279 @@ namespace WinFormsApp7
             this.labelHexa3.Location = new System.Drawing.Point(76, 86);
             this.labelHexa3.Name = "labelHexa3";
             this.labelHexa3.Size = new System.Drawing.Size(60, 13);
-            this.labelHexa3.TabIndex = 48;
+            this.labelHexa3.TabIndex = 0;
             this.labelHexa3.Text = "Hossz";
             this.labelHexa3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-
-            
-            
-
-
-
+            // 
+            // labelBrick1
+            // 
+            this.labelBrick1.BackColor = System.Drawing.Color.Aqua;
+            this.labelBrick1.Font = new System.Drawing.Font("Footlight MT Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelBrick1.Location = new System.Drawing.Point(10, 126);
+            this.labelBrick1.Name = "labelBrick1";
+            this.labelBrick1.Size = new System.Drawing.Size(191, 24);
+            this.labelBrick1.TabIndex = 0;
+            this.labelBrick1.Text = "Lapos";
+            this.labelBrick1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // labelBrick2
+            // 
+            this.labelBrick2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelBrick2.Location = new System.Drawing.Point(10, 151);
+            this.labelBrick2.Name = "labelBrick2";
+            this.labelBrick2.Size = new System.Drawing.Size(60, 12);
+            this.labelBrick2.TabIndex = 0;
+            this.labelBrick2.Text = "Szélesség";
+            this.labelBrick2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelBrick3
+            // 
+            this.labelBrick3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelBrick3.Location = new System.Drawing.Point(76, 150);
+            this.labelBrick3.Name = "labelBrick3";
+            this.labelBrick3.Size = new System.Drawing.Size(60, 12);
+            this.labelBrick3.TabIndex = 0;
+            this.labelBrick3.Text = "magasság";
+            this.labelBrick3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelBrick4
+            // 
+            this.labelBrick4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelBrick4.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelBrick4.Location = new System.Drawing.Point(142, 150);
+            this.labelBrick4.Name = "labelBrick4";
+            this.labelBrick4.Size = new System.Drawing.Size(60, 13);
+            this.labelBrick4.TabIndex = 0;
+            this.labelBrick4.Text = "Hossz";
+            this.labelBrick4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelPipe1
+            // 
+            this.labelPipe1.BackColor = System.Drawing.Color.Aqua;
+            this.labelPipe1.Font = new System.Drawing.Font("Footlight MT Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPipe1.Location = new System.Drawing.Point(12, 200);
+            this.labelPipe1.Name = "labelPipe1";
+            this.labelPipe1.Size = new System.Drawing.Size(191, 24);
+            this.labelPipe1.TabIndex = 0;
+            this.labelPipe1.Text = "Cső";
+            this.labelPipe1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // labelPipe2
+            // 
+            this.labelPipe2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelPipe2.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPipe2.Location = new System.Drawing.Point(12, 224);
+            this.labelPipe2.Name = "labelPipe2";
+            this.labelPipe2.Size = new System.Drawing.Size(60, 12);
+            this.labelPipe2.TabIndex = 0;
+            this.labelPipe2.Text = "Átmérő";
+            this.labelPipe2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // labelPipe3
+            // 
+            this.labelPipe3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelPipe3.Location = new System.Drawing.Point(74, 224);
+            this.labelPipe3.Name = "labelPipe3";
+            this.labelPipe3.Size = new System.Drawing.Size(60, 12);
+            this.labelPipe3.TabIndex = 0;
+            this.labelPipe3.Text = "Fal";
+            this.labelPipe3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // labelPipe4
+            // 
+            this.labelPipe4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelPipe4.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPipe4.Location = new System.Drawing.Point(142, 224);
+            this.labelPipe4.Name = "labelPipe4";
+            this.labelPipe4.Size = new System.Drawing.Size(60, 12);
+            this.labelPipe4.TabIndex = 0;
+            this.labelPipe4.Text = "Hossz";
+            this.labelPipe4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // labelHolSec1
+            // 
+            this.labelHolSec1.BackColor = System.Drawing.Color.Aqua;
+            this.labelHolSec1.Font = new System.Drawing.Font("Footlight MT Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelHolSec1.Location = new System.Drawing.Point(8, 266);
+            this.labelHolSec1.Name = "labelHolSec1";
+            this.labelHolSec1.Size = new System.Drawing.Size(259, 24);
+            this.labelHolSec1.TabIndex = 0;
+            this.labelHolSec1.Text = "Zártszelvény";
+            this.labelHolSec1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // labelHolSec2
+            // 
+            this.labelHolSec2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelHolSec2.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelHolSec2.Location = new System.Drawing.Point(9, 288);
+            this.labelHolSec2.Name = "labelHolSec2";
+            this.labelHolSec2.Size = new System.Drawing.Size(60, 12);
+            this.labelHolSec2.TabIndex = 0;
+            this.labelHolSec2.Text = "Szélesség";
+            this.labelHolSec2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelHolSec3
+            // 
+            this.labelHolSec3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelHolSec3.Font = new System.Drawing.Font("Footlight MT Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelHolSec3.Location = new System.Drawing.Point(75, 288);
+            this.labelHolSec3.Name = "labelHolSec3";
+            this.labelHolSec3.Size = new System.Drawing.Size(60, 12);
+            this.labelHolSec3.TabIndex = 0;
+            this.labelHolSec3.Text = "magasság";
+            this.labelHolSec3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelHolSec4
+            // 
+            this.labelHolSec4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelHolSec4.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelHolSec4.Location = new System.Drawing.Point(140, 288);
+            this.labelHolSec4.Name = "labelHolSec4";
+            this.labelHolSec4.Size = new System.Drawing.Size(60, 12);
+            this.labelHolSec4.TabIndex = 0;
+            this.labelHolSec4.Text = "fal";
+            this.labelHolSec4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelHolSec5
+            // 
+            this.labelHolSec5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelHolSec5.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelHolSec5.Location = new System.Drawing.Point(207, 290);
+            this.labelHolSec5.Name = "labelHolSec5";
+            this.labelHolSec5.Size = new System.Drawing.Size(60, 13);
+            this.labelHolSec5.TabIndex = 0;
+            this.labelHolSec5.Text = "Hossz";
+            this.labelHolSec5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label1.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(309, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(33, 14);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Vas";
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label2.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(348, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(33, 14);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Alu";
             // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.label3.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(309, 9);
+            this.label3.Location = new System.Drawing.Point(387, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 14);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Vas";
+            this.label3.Text = "Réz";
             // 
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.label4.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(348, 9);
+            this.label4.Location = new System.Drawing.Point(426, 9);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 14);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Alu";
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.label5.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(387, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(33, 14);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Réz";
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.label6.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(426, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 14);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Műa";
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label7.Location = new System.Drawing.Point(309, 36);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(33, 20);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "label7";
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label8.Location = new System.Drawing.Point(348, 36);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(33, 20);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "label8";
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label9.Location = new System.Drawing.Point(387, 36);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(33, 20);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "label8";
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label10.Location = new System.Drawing.Point(426, 36);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(33, 20);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "label10";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(192, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Kilépés";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.PressExitButton);
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label11.Location = new System.Drawing.Point(309, 100);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(33, 20);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "label7";
-            // 
-            // label12
-            // 
-            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label12.Location = new System.Drawing.Point(348, 100);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(33, 20);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "label8";
-            // 
-            // label13
-            // 
-            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label13.Location = new System.Drawing.Point(387, 100);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(33, 20);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "label8";
-            // 
-            // label14
-            // 
-            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label14.Location = new System.Drawing.Point(426, 100);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(33, 20);
-            this.label14.TabIndex = 13;
-            this.label14.Text = "label7";
-            // 
-            // label15
-            // 
-            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label15.Location = new System.Drawing.Point(309, 165);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(33, 20);
-            this.label15.TabIndex = 16;
-            this.label15.Text = "label8";
-            // 
-            // label16
-            // 
-            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label16.Location = new System.Drawing.Point(348, 165);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(33, 20);
-            this.label16.TabIndex = 17;
-            this.label16.Text = "label7";
-            // 
-            // label17
-            // 
-            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label17.Location = new System.Drawing.Point(387, 166);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(33, 20);
-            this.label17.TabIndex = 14;
-            this.label17.Text = "label8";
-            // 
-            // label18
-            // 
-            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label18.Location = new System.Drawing.Point(426, 165);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(33, 20);
-            this.label18.TabIndex = 15;
-            this.label18.Text = "label7";
-            // 
-            // label19
-            // 
-            this.label19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label19.Location = new System.Drawing.Point(426, 239);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(33, 20);
-            this.label19.TabIndex = 20;
-            this.label19.Text = "label8";
-            // 
-            // label20
-            // 
-            this.label20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label20.Location = new System.Drawing.Point(387, 239);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(33, 20);
-            this.label20.TabIndex = 21;
-            this.label20.Text = "label7";
-            // 
-            // label21
-            // 
-            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label21.Location = new System.Drawing.Point(348, 239);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(33, 20);
-            this.label21.TabIndex = 18;
-            this.label21.Text = "label8";
-            // 
-            // label22
-            // 
-            this.label22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label22.Location = new System.Drawing.Point(309, 239);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(33, 20);
-            this.label22.TabIndex = 19;
-            this.label22.Text = "label7";
-
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox3.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(76, 165);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(60, 24);
-            this.textBox3.TabIndex = 25;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox4.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(10, 166);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(60, 24);
-            this.textBox4.TabIndex = 24;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox5.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(74, 239);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(60, 24);
-            this.textBox5.TabIndex = 27;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox6.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(8, 239);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(60, 24);
-            this.textBox6.TabIndex = 26;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox7.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(75, 305);
-            this.textBox7.MaximumSize = new System.Drawing.Size(60, 25);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(60, 24);
-            this.textBox7.TabIndex = 29;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox8.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox8.Location = new System.Drawing.Point(9, 305);
-            this.textBox8.MaximumSize = new System.Drawing.Size(60, 25);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(60, 24);
-            this.textBox8.TabIndex = 28;
-
-            // 
-            // label25
-            // 
-            this.label25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label25.Location = new System.Drawing.Point(76, 150);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(60, 12);
-            this.label25.TabIndex = 32;
-            this.label25.Text = "magasság";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label26
-            // 
-            this.label26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label26.Location = new System.Drawing.Point(10, 151);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(60, 12);
-            this.label26.TabIndex = 33;
-            this.label26.Text = "Lapos";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label27
-            // 
-            this.label27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label27.Location = new System.Drawing.Point(74, 224);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(60, 12);
-            this.label27.TabIndex = 34;
-            this.label27.Text = "Fal";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label29
-            // 
-            this.label29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label29.Font = new System.Drawing.Font("Footlight MT Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label29.Location = new System.Drawing.Point(75, 288);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(60, 12);
-            this.label29.TabIndex = 36;
-            this.label29.Text = "magasság";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label30
-            // 
-            this.label30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label30.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label30.Location = new System.Drawing.Point(9, 288);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(60, 12);
-            this.label30.TabIndex = 37;
-            this.label30.Text = "Szélesség";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox9.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox9.Location = new System.Drawing.Point(207, 305);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(60, 24);
-            this.textBox9.TabIndex = 39;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox10.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox10.Location = new System.Drawing.Point(141, 305);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(60, 24);
-            this.textBox10.TabIndex = 38;
-            // 
-            // textBox11
-            // 
-            this.textBox11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox11.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox11.Location = new System.Drawing.Point(141, 239);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(60, 24);
-            this.textBox11.TabIndex = 40;
-            // 
-            // textBox12
-            // 
-            this.textBox12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.textBox12.Font = new System.Drawing.Font("Footlight MT Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox12.Location = new System.Drawing.Point(142, 165);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(60, 24);
-            this.textBox12.TabIndex = 41;
-            this.textBox12.Text = "6000";
-            // 
-            // label33
-            // 
-            this.label33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label33.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label33.Location = new System.Drawing.Point(140, 288);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(60, 12);
-            this.label33.TabIndex = 44;
-            this.label33.Text = "fal";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
-            // 
-            // label37
-            // 
-            this.label37.BackColor = System.Drawing.Color.Aqua;
-            this.label37.Font = new System.Drawing.Font("Footlight MT Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label37.Location = new System.Drawing.Point(10, 126);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(191, 24);
-            this.label37.TabIndex = 49;
-            this.label37.Text = "Lapos";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label38
-            // 
-            this.label38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label38.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label38.Location = new System.Drawing.Point(142, 150);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(60, 13);
-            this.label38.TabIndex = 50;
-            this.label38.Text = "Hossz";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label31
-            // 
-            this.label31.BackColor = System.Drawing.Color.Aqua;
-            this.label31.Font = new System.Drawing.Font("Footlight MT Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label31.Location = new System.Drawing.Point(12, 200);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(191, 24);
-            this.label31.TabIndex = 51;
-            this.label31.Text = "Lapos";
-            this.label31.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label28
-            // 
-            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label28.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label28.Location = new System.Drawing.Point(12, 224);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(60, 12);
-            this.label28.TabIndex = 52;
-            this.label28.Text = "Átmérő";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label32
-            // 
-            this.label32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label32.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label32.Location = new System.Drawing.Point(142, 224);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(60, 12);
-            this.label32.TabIndex = 53;
-            this.label32.Text = "Hossz";
-            this.label32.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label34
-            // 
-            this.label34.BackColor = System.Drawing.Color.Aqua;
-            this.label34.Font = new System.Drawing.Font("Footlight MT Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label34.Location = new System.Drawing.Point(8, 266);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(259, 24);
-            this.label34.TabIndex = 54;
-            this.label34.Text = "Zártszelvény";
-            this.label34.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label39
-            // 
-            this.label39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label39.Font = new System.Drawing.Font("Footlight MT Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label39.Location = new System.Drawing.Point(207, 290);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(60, 13);
-            this.label39.TabIndex = 55;
-            this.label39.Text = "Hossz";
-            this.label39.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label40
-            // 
-            this.label40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label40.Location = new System.Drawing.Point(426, 305);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(33, 20);
-            this.label40.TabIndex = 58;
-            this.label40.Text = "label8";
-            // 
-            // label41
-            // 
-            this.label41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label41.Location = new System.Drawing.Point(387, 305);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(33, 20);
-            this.label41.TabIndex = 59;
-            this.label41.Text = "label7";
-            // 
-            // label42
-            // 
-            this.label42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label42.Location = new System.Drawing.Point(348, 305);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(33, 20);
-            this.label42.TabIndex = 56;
-            this.label42.Text = "label8";
-            // 
-            // label43
-            // 
-            this.label43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label43.Location = new System.Drawing.Point(309, 305);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(33, 20);
-            this.label43.TabIndex = 57;
-            this.label43.Text = "label7";
+            this.label4.Text = "Műa";
+            // 
+            // labelFeResult
+            // 
+            this.labelFeResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelFeResult.Location = new System.Drawing.Point(309, 36);
+            this.labelFeResult.Name = "labelFeResult";
+            this.labelFeResult.Size = new System.Drawing.Size(33, 20);
+            this.labelFeResult.TabIndex = 0;
+            this.labelFeResult.Text = "label7";
+            // 
+            // labelAlResult
+            // 
+            this.labelAlResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelAlResult.Location = new System.Drawing.Point(348, 36);
+            this.labelAlResult.Name = "labelAlResult";
+            this.labelAlResult.Size = new System.Drawing.Size(33, 20);
+            this.labelAlResult.TabIndex = 0;
+            this.labelAlResult.Text = "label8";
+            // 
+            // labelCuResult
+            // 
+            this.labelCuResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelCuResult.Location = new System.Drawing.Point(387, 36);
+            this.labelCuResult.Name = "labelCuResult";
+            this.labelCuResult.Size = new System.Drawing.Size(33, 20);
+            this.labelCuResult.TabIndex = 0;
+            this.labelCuResult.Text = "label8";
+            // 
+            // labelPLResult
+            // 
+            this.labelPLResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.labelPLResult.Location = new System.Drawing.Point(426, 36);
+            this.labelPLResult.Name = "labelPLResult";
+            this.labelPLResult.Size = new System.Drawing.Size(33, 20);
+            this.labelPLResult.TabIndex = 0;
+            this.labelPLResult.Text = "label10";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(281, 87);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(486, 341);
-            this.Controls.Add(this.label40);
-            this.Controls.Add(this.label41);
-            this.Controls.Add(this.label42);
-            this.Controls.Add(this.label43);
-            this.Controls.Add(this.label39);
-            this.Controls.Add(this.label34);
-            this.Controls.Add(this.label32);
-            this.Controls.Add(this.label28);
-            this.Controls.Add(this.label31);
-            this.Controls.Add(this.label38);
-            this.Controls.Add(this.label37);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.labelHolSec5);
+            this.Controls.Add(this.labelHolSec1);
+            this.Controls.Add(this.labelPipe4);
+            this.Controls.Add(this.labelPipe2);
+            this.Controls.Add(this.labelPipe1);
+            this.Controls.Add(this.labelBrick4);
+            this.Controls.Add(this.labelBrick1);
             this.Controls.Add(this.labelHexa3);
             this.Controls.Add(this.labelHexa1);
             this.Controls.Add(this.labelDiam1);
-            this.Controls.Add(this.label33);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.label29);
-            this.Controls.Add(this.label30);
-            this.Controls.Add(this.label27);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.label26);
+            this.Controls.Add(this.labelHolSec4);
+            this.Controls.Add(this.BrickLengthTextBox);
+            this.Controls.Add(this.PipeLengthtextBox);
+            this.Controls.Add(this.HolSecLengthtextBox);
+            this.Controls.Add(this.HolSecWalltextBox);
+            this.Controls.Add(this.labelHolSec3);
+            this.Controls.Add(this.labelHolSec2);
+            this.Controls.Add(this.labelPipe3);
+            this.Controls.Add(this.labelBrick3);
+            this.Controls.Add(this.labelBrick2);
             this.Controls.Add(this.labelHexa2);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.HolSecHeigthtextBox);
+            this.Controls.Add(this.HolSecWidthtextBox);
+            this.Controls.Add(this.PipeWalltextBox);
+            this.Controls.Add(this.PipeDiamtextBox);
+            this.Controls.Add(this.BrickHeightTextBox);
+            this.Controls.Add(this.BrickWidthTextBox);
             this.Controls.Add(this.HexaLengthTextBox);
             this.Controls.Add(this.HexaTextBox);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.ExitButton);
+            this.Controls.Add(this.labelPLResult);
+            this.Controls.Add(this.labelCuResult);
+            this.Controls.Add(this.labelAlResult);
+            this.Controls.Add(this.labelFeResult);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelDiam3);
             this.Controls.Add(this.LabelDiam2);
             this.Controls.Add(this.DiameterLengthTextBox);
@@ -735,6 +568,7 @@ namespace WinFormsApp7
             this.Font = new System.Drawing.Font("Footlight MT Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "Form1";
             this.Text = "Súly számoló";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -746,60 +580,45 @@ namespace WinFormsApp7
         private System.Windows.Forms.TextBox DiameterLengthTextBox;
         private System.Windows.Forms.Label LabelDiam2;
         private System.Windows.Forms.Label labelDiam3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label labelFeResult;
+        private System.Windows.Forms.Label labelAlResult;
+        private System.Windows.Forms.Label labelCuResult;
+        private System.Windows.Forms.Label labelPLResult;
+        private System.Windows.Forms.Button ExitButton;
         private System.Windows.Forms.TextBox HexaLengthTextBox;
         private System.Windows.Forms.TextBox HexaTextBox;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox BrickHeightTextBox;
+        private System.Windows.Forms.TextBox BrickWidthTextBox;
+        private System.Windows.Forms.TextBox PipeWalltextBox;
+        private System.Windows.Forms.TextBox PipeDiamtextBox;
+        private System.Windows.Forms.TextBox HolSecHeigthtextBox;
+        private System.Windows.Forms.TextBox HolSecWidthtextBox;
         private System.Windows.Forms.Label labelHexa2;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label labelBrick3;
+        private System.Windows.Forms.Label labelBrick2;
+        private System.Windows.Forms.Label labelPipe3;
+        private System.Windows.Forms.Label labelHolSec3;
+        private System.Windows.Forms.Label labelHolSec2;
+        private System.Windows.Forms.TextBox HolSecLengthtextBox;
+        private System.Windows.Forms.TextBox HolSecWalltextBox;
+        private System.Windows.Forms.TextBox PipeLengthtextBox;
+        private System.Windows.Forms.TextBox BrickLengthTextBox;
+        private System.Windows.Forms.Label labelHolSec4;
         private System.Windows.Forms.Label labelDiam1;
         private System.Windows.Forms.Label labelHexa1;
         private System.Windows.Forms.Label labelHexa3;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label labelBrick1;
+        private System.Windows.Forms.Label labelBrick4;
+        private System.Windows.Forms.Label labelPipe1;
+        private System.Windows.Forms.Label labelPipe2;
+        private System.Windows.Forms.Label labelPipe4;
+        private System.Windows.Forms.Label labelHolSec1;
+        private System.Windows.Forms.Label labelHolSec5;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
